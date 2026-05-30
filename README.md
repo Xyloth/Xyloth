@@ -7,13 +7,22 @@ tooling, and research systems.
 - LinkedIn: [linkedin.com/in/xyflow](https://www.linkedin.com/in/xyflow/)
 - Company: XyFlow Innovations LLC
 
+## Start Here
+
+- Live portfolio: [www.xyflowinnovations.com/portfolio](https://www.xyflowinnovations.com/portfolio)
+- Strongest current demo: [SourceDeck](https://sourcedeck.vercel.app)
+- SourceDeck repo: [Xyloth/SourceDeck](https://github.com/Xyloth/SourceDeck)
+
 ## Current Signal
 
 I build practical tools fast, then force them to produce evidence: working
 interfaces, source-grounded records, exportable artifacts, tests, screenshots,
-and honest documentation. My background combines GIS, survey field operations,
-UAS/LiDAR work, Python data pipelines, mobile app builds, Unity tooling, and
-agent-orchestrated software development.
+and honest documentation. SourceDeck is the cleanest current example: a
+deployed React/TypeScript evidence command center with document ingestion,
+quote cards, live meeting mode, encrypted workspace export, and a local case
+preloader. My background combines GIS, survey field operations, UAS/LiDAR work,
+Python data pipelines, mobile app builds, Unity tooling, and agent-orchestrated
+software development.
 
 ## Projects To Review
 
