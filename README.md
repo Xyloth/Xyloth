@@ -13,7 +13,7 @@ Almost all of the work below was built in 2026 — nights and weekends, around a
 
 **📍 Boundary XYQ** — a near-launch iOS field app for land surveyors: CSV/DXF import, a COGO constraint/proof engine, MapKit rendering. Build 18, release gate green, validated against an 845-scenario geometry gauntlet. → [overview](https://www.xyflowinnovations.com/boundary-xyq)
 
-**📄 SourceDeck** — a local-first "evidence command center" that turns messy records into source-chained cards with exact quotes and page anchors, then exports verified-only packets. Passes a **63-case hostile-input gauntlet** (prompt-injection, redaction-leak, signed-manifest trust) with zero failures. → [repo](https://github.com/Xyloth/SourceDeck)
+**📄 SourceDeck** — a local-first "evidence command center" that turns messy records into source-chained cards with exact quotes and page anchors, then exports verified-only packets. Passes a **63-case hostile-input gauntlet** (prompt-injection, redaction-leak, signed-manifest trust) with zero failures. → [live demo](https://sourcedeck.vercel.app) · [repo](https://github.com/Xyloth/SourceDeck)
 
 **🛰 XPRIZE Quantum (rare-event QAE)** — a benchmark harness for an XPRIZE Quantum Applications submission on rare-event collision-risk estimation: classical baselines, stress regimes, and Phase-II quantum resource estimates. Published with a DOI. → [repo](https://github.com/Xyloth/xpqa-rare-event-qae) · [DOI](https://doi.org/10.5281/zenodo.18816742)
 
