@@ -1,37 +1,58 @@
-### Hi, I'm James Dye 👋
-**AI-orchestrating systems builder — Columbus, OH · remote**
+# James Dye
 
-I take a problem in a domain I've never touched, attack the knowledge gap first, and come back with working software. The method *is* the product: I run several AI models against each other to cover their blind spots, keep the architecture and the failure modes under my own hands, and try to break everything I build before I'll call it finished.
+### AI-native systems builder · GIS, field operations, data pipelines, and evidence systems
 
-Almost all of the work below was built in 2026 — nights and weekends, around a full-time field job. I'm now doing this full-time for clients.
+[Portfolio](https://www.xyflowinnovations.com/portfolio) · [LinkedIn](https://www.linkedin.com/in/xyflow/) · [Email](mailto:founder@xyflowinnovations.com) · Columbus, Ohio / remote
 
----
+I turn unfamiliar, messy workflows into explicit rules, working software, and evidence that the software behaves correctly. AI writes a substantial share of the implementation. I own the problem framing, architecture, decomposition, acceptance criteria, adversarial review, and release decisions.
 
-#### Selected work
+## Start with working proof
 
-**🛠 PackSmith** — a Unity Editor QA tool that scans imported asset packs, flags what will break, and applies rollback-safe fixes with proof. Taken to v0.1.0 with a green release-readiness gate and a live in-app update channel. → [repo](https://github.com/Xyloth/packsmith) · [site](https://www.xyflowinnovations.com/packsmith)
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://sourcedeck.vercel.app"><img src="https://www.xyflowinnovations.com/media/sourcedeck-command-center.png" alt="SourceDeck evidence command center" width="100%"></a>
+      <h3>SourceDeck</h3>
+      A deployed React/TypeScript evidence system for turning PDFs, DOCX files, and notes into source-chained quotes and fail-closed evidence packets. Its published gauntlet passes 63 hostile-input cases covering prompt injection, citation integrity, redaction leaks, and packet tampering.
+      <br><br>
+      <a href="https://sourcedeck.vercel.app"><strong>Live demo</strong></a> · <a href="https://github.com/Xyloth/SourceDeck">code</a> · <a href="https://github.com/Xyloth/SourceDeck/actions/workflows/ci.yml">CI</a> · <a href="https://github.com/Xyloth/SourceDeck/blob/main/TRUST_MODEL.md">trust model and honest limits</a> · <a href="https://github.com/Xyloth/SourceDeck/blob/main/reports/source-gauntlet-report.md">63-case report</a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://xyloth.github.io/dosekeeper/"><img src="https://raw.githubusercontent.com/Xyloth/dosekeeper/main/docs/screenshots/caregiver.png" alt="DoseKeeper caregiver view" width="100%"></a>
+      <h3>DoseKeeper</h3>
+      A live Flutter/Riverpod care-coordination demo in which Patient, Caregiver, and Provider views share one state graph. Deterministic time, local persistence, correction flows, widget tests, CI, and web/Windows release builds make the behavior inspectable rather than implied.
+      <br><br>
+      <a href="https://xyloth.github.io/dosekeeper/"><strong>Live demo</strong></a> · <a href="https://github.com/Xyloth/dosekeeper">code</a> · <a href="https://github.com/Xyloth/dosekeeper/actions/workflows/ci.yml">CI</a> · <a href="https://github.com/Xyloth/dosekeeper/blob/main/DESIGN.md">design decisions</a>
+    </td>
+  </tr>
+</table>
 
-**📍 Boundary XYQ** — a near-launch iOS field app for land surveyors: CSV/DXF import, a COGO constraint/proof engine, MapKit rendering. Build 18, release gate green, validated against an 845-scenario geometry gauntlet. → [overview](https://www.xyflowinnovations.com/boundary-xyq)
+## More public engineering evidence
 
-**📄 SourceDeck** — a local-first "evidence command center" that turns messy records into source-chained cards with exact quotes and page anchors, then exports verified-only packets. Passes a **63-case hostile-input gauntlet** (prompt-injection, redaction-leak, signed-manifest trust) with zero failures. → [live demo](https://sourcedeck.vercel.app) · [repo](https://github.com/Xyloth/SourceDeck)
+**[GNSS Clock Pipeline](https://github.com/Xyloth/gnss-clock-pipeline)** — Python ETL for four satellite constellations and space-weather feeds, with RINEX parsing, validated Arrow/Parquet schemas, partitioned outputs, fixtures, tests, and CI. The most important artifact is the [results writeup](https://github.com/Xyloth/gnss-clock-pipeline/blob/main/docs/results.md): the ML objective did not become operationally useful, and the repository explains why instead of hiding it.
 
-**🛰 XPRIZE Quantum (rare-event QAE)** — a benchmark harness for an XPRIZE Quantum Applications submission on rare-event collision-risk estimation: classical baselines, stress regimes, and Phase-II quantum resource estimates. Published with a DOI. → [repo](https://github.com/Xyloth/xpqa-rare-event-qae) · [DOI](https://doi.org/10.5281/zenodo.18816742)
+**[Generation Engine](https://github.com/Xyloth/Generation-Engine)** — local-first Windows writing and research software with a Python standard-library backend, vanilla-JS frontend, Electron shell, file-led storage, SSE streaming, multiple model backends, portable packaging, and source-state gates for nonfiction. Its [engineering notes](https://github.com/Xyloth/Generation-Engine#engineering-notes) document both the architecture and the abandoned autonomy approach that produced worse writing.
 
-**🌐 GNSS Clock Pipeline** — a production-style Python ETL over 8 years of multi-constellation GNSS + space-weather data. I'll point you straight at the part most people hide: the [results writeup](https://github.com/Xyloth/gnss-clock-pipeline) where the ML prediction goal *didn't* pan out, and says so. Honest negative results are part of how I work.
+**[Attractor Observatory](https://github.com/Xyloth/Attractor-Observatory)** — a public AI-collaboration and research-control-room artifact: agent roles, task-estimation telemetry, doctrine derived from failures, audit logs, reproducibility evidence, and a Streamlit observability surface. The repository explicitly separates its shipped public runtime from privately held scientific engines.
 
-*Also: a zero-dependency local-first writing app ([Generation Engine](https://github.com/Xyloth/Generation-Engine)), a multi-agent research harness ([Attractor Observatory](https://github.com/Xyloth/Attractor-Observatory)), two Unity game prototypes, and a couple of vertical SaaS prototypes. ~18 repos, all this year.*
+**[ChirpWise](https://github.com/Xyloth/ChirpWise)** — an offline Android bird-call trainer and Python data pipeline covering 1,084 species and 1,114 clips. It includes local progress, quiz flows, per-recording provenance, tests, screenshots, and a row-level licensing audit that clearly blocks a commercial release until replacement audio is secured.
 
----
+## How I use AI without outsourcing accountability
 
-#### How I build
-The thing that separates this from "I vibe-coded a demo": I ship with adversarial test gauntlets and I write down what fails. A 50/50 release-readiness gate on the Unity tool. 845 scenarios on the survey app. 63 hostile inputs on the evidence system. When an approach loses — like the GNSS model, or an AI image-compositing pass that scored 4/10 — that goes in the log too. Verified beats impressive.
+1. Turn the real workflow into states, invariants, inputs, outputs, and failure rules.
+2. Split the work across architect, builder, reviewer, and red-team roles.
+3. Inspect the resulting code and trace how state and data move through the system.
+4. Write deterministic tests and adversarial gauntlets around the claims that matter.
+5. Publish the limits, failed approaches, and release boundary alongside the demo.
 
-#### Stack
-`Python` · `TypeScript` (React / Node / React Native) · `C#` (.NET + Unity) · iOS / MapKit · RAG & LLM orchestration (Claude Code, Codex, the Anthropic & OpenAI APIs) · Parquet/Arrow data pipelines · `git`
+That process shows up repeatedly across healthcare coordination, document evidence, GNSS data engineering, field surveying, desktop software, mobile training, and research tooling. The domain changes; the operating discipline does not.
 
----
+## Repository visibility
 
-#### Work with me
-If my path looks non-traditional, the fastest way to see how I work is to put me on it. I'll take a small, fixed-price, time-boxed build — you get a working artifact and a teardown at the end. If it lands, we keep going. If it doesn't, you keep the work.
+This account currently contains **29 repositories: 10 public and inspectable here, plus 19 private product, competition, and internal-tool repositories**. I do not present the private repositories as public proof. They include a near-launch survey-field app, a C++/.NET camera-SDK integration, a Unity Editor QA tool, and a seven-product local-first operations suite; I can walk through the relevant work when appropriate.
 
-📫 **founder@xyflowinnovations.com** · [xyflowinnovations.com](https://www.xyflowinnovations.com) · [LinkedIn](https://www.linkedin.com/in/xyflow)
+## What I am looking for
+
+I am pursuing software, applied-AI, AI QA/evaluation, implementation, and geospatial-technology work where fast domain learning, system judgment, and accountable delivery matter. My path is nontraditional, so I prefer to be evaluated through a working artifact, architecture discussion, debugging exercise, or practical build.
+
+**Contact:** [founder@xyflowinnovations.com](mailto:founder@xyflowinnovations.com) · [LinkedIn](https://www.linkedin.com/in/xyflow/) · [portfolio](https://www.xyflowinnovations.com/portfolio)
